@@ -1,0 +1,61 @@
+/** Design tokens. Tune the BabyBlink palette here and in app/globals.css together. */
+
+export const tokens = {
+  color: {
+    brandYellow: "#F8CB46",
+    brandYellowSoft: "#FFF6D6",
+    brandGreen: "#0C831F",
+    brandGreenDark: "#0A6B19",
+    brandGreenSoft: "#E8F5EA",
+    ink900: "#1F1F1F",
+    ink600: "#5C5C5C",
+    ink400: "#9A9A9A",
+    surface: "#FFFFFF",
+    bg: "#F5F5F7",
+    border: "#E8E8E8",
+    danger: "#E23744",
+    offerBlue: "#256FEF",
+    schoolCoral: "#FF6B6B",
+    schoolBlue: "#4D96FF",
+  },
+  radius: {
+    card: 12,
+    button: 10,
+    chip: 999,
+    sheet: 20,
+  },
+  shadow: {
+    card: "0 1px 2px rgba(0,0,0,.06)",
+    sheet: "0 8px 24px rgba(0,0,0,.08)",
+  },
+  type: {
+    hero: { size: 32, line: 36 },
+    h1: { size: 24, line: 30 },
+    h2: { size: 20, line: 26 },
+    title: { size: 16, line: 22 },
+    body: { size: 14, line: 20 },
+    caption: { size: 12, line: 16 },
+    price: { size: 16, line: 20 },
+    tiny: { size: 10, line: 12 },
+  },
+} as const;
+
+export const BRAND = {
+  name: "BabyBlink",
+  nameDesk: "Baby",
+  nameDash: "Blink",
+  tagline: "Everything your desk and classroom needs, in minutes.",
+  taglineAr: "كل ما يحتاجه مكتبك وصفّك، خلال دقائق.",
+  legalName: "BabyBlink Trading LLC",
+  legalNameAr: "بيبي بلينك للتجارة ذ.م.م",
+  trn: "100234567800003",
+  city: "Ajman",
+  cityAr: "عجمان",
+  supportEmail: "hello@babyblink.ae",
+  handlingFee: 2,
+  freeDeliveryAt: 100,
+  midDeliveryAt: 50,
+  deliveryFeeLow: 5,
+  deliveryFeeMid: 3,
+  vatRate: 0.05,
+} as const;
