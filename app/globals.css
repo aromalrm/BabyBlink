@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-yellow: #f8cb46;
+  --color-brand-yellow-soft: #fff6d6;
+  --color-brand-green: #0c831f;
+  --color-brand-green-dark: #0a6b19;
+  --color-brand-green-soft: #e8f5ea;
+  --color-ink-900: #1f1f1f;
+  --color-ink-600: #5c5c5c;
+  --color-ink-400: #9a9a9a;
+  --color-surface: #ffffff;
+  --color-bg: #f5f5f7;
+  --color-line: #e8e8e8;
+  --color-danger: #e23744;
+  --color-offer: #256fef;
+  --color-school-coral: #ff6b6b;
+  --color-school-blue: #4d96ff;
+  --font-heading: var(--font-jakarta), sans-serif;
+  --font-body: var(--font-figtree), sans-serif;
+  --font-arabic: var(--font-arabic), sans-serif;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-sheet: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --radius-card: 12px;
+  --radius-button: 10px;
+}
+
+html {
+  background: #e9e9ec;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: #e9e9ec;
+  color: #1f1f1f;
+  font-family: var(--font-figtree), sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+html.splash-done #deskdash-splash {
+  display: none;
+}
+
+html[lang="ar"] body {
+  font-family: var(--font-arabic), sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid #0c831f;
+  outline-offset: 2px;
+}
+
+::selection {
+  background: #fff6d6;
+  color: #1f1f1f;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #ececec 25%, #f7f7f7 37%, #ececec 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.2s ease infinite;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.floaty {
+  animation: floaty 3.4s ease-in-out infinite;
+}
+
+.floaty-slow {
+  animation: floaty 4s ease-in-out infinite;
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+.nudge {
+  animation: nudge 1.4s ease-in-out infinite;
+}
+
+html[dir="rtl"] .nudge {
+  animation-name: nudge-rtl;
+}
+
+@keyframes nudge-rtl {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floaty,
+  .floaty-slow,
+  .nudge,
+  .shimmer {
+    animation: none;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-sheet {
+    box-shadow: none !important;
+    max-width: none !important;
+  }
+}
