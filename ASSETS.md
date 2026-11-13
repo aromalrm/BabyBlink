@@ -1,4 +1,4 @@
-# DeskDash image files
+# BabyBlink image files
 
 These are original illustrated stand-ins for the Ajman demo. They are not photographs and they are not taken from another shop. Replace a file in place to swap the art; the app reads the path, not the drawing.
 

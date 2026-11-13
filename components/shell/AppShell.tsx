@@ -294,7 +294,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           >
             <span className="flex items-center gap-2 font-heading text-[40px] font-extrabold">
               <Mark className="h-12 w-12" />
-              Desk<span className="text-brand-green">Dash</span>
+              Baby<span className="text-brand-green">Blink</span>
             </span>
           </motion.div>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.35 }} className="mt-3 max-w-[280px] text-center text-[14px]">

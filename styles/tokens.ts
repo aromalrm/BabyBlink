@@ -1,4 +1,4 @@
-/** Design tokens. Tune the DeskDash palette here and in app/globals.css together. */
+/** Design tokens. Tune the BabyBlink palette here and in app/globals.css together. */
 
 export const tokens = {
   color: {
@@ -41,17 +41,17 @@ export const tokens = {
 } as const;
 
 export const BRAND = {
-  name: "DeskDash",
-  nameDesk: "Desk",
-  nameDash: "Dash",
+  name: "BabyBlink",
+  nameDesk: "Baby",
+  nameDash: "Blink",
   tagline: "Everything your desk and classroom needs, in minutes.",
   taglineAr: "كل ما يحتاجه مكتبك وصفّك، خلال دقائق.",
-  legalName: "DeskDash Trading LLC",
-  legalNameAr: "ديسك داش للتجارة ذ.م.م",
+  legalName: "BabyBlink Trading LLC",
+  legalNameAr: "بيبي بلينك للتجارة ذ.م.م",
   trn: "100234567800003",
   city: "Ajman",
   cityAr: "عجمان",
-  supportEmail: "hello@deskdash.ae",
+  supportEmail: "hello@babyblink.ae",
   handlingFee: 2,
   freeDeliveryAt: 100,
   midDeliveryAt: 50,

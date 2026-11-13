@@ -20,7 +20,7 @@ export function UiProvider({ value, children }: { value: UiApi; children: React.
 export function useUi() {
   const value = useContext(UiContext);
   if (!value) {
-    throw new Error("DeskDash controls are unavailable on this screen.");
+    throw new Error("BabyBlink controls are unavailable on this screen.");
   }
   return value;
 }

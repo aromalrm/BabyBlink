@@ -29,11 +29,11 @@ export function Logo({
       onPointerDown={onPointerDown}
       onPointerUp={onPointerUp}
       onPointerLeave={onPointerLeave}
-      aria-label="DeskDash"
+      aria-label="BabyBlink"
     >
       <Mark />
       <span className={ink}>
-        Desk<span className="text-brand-green">Dash</span>
+        Baby<span className="text-brand-green">Blink</span>
       </span>
     </button>
   );

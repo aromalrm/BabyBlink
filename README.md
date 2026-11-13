@@ -1,4 +1,4 @@
-# DeskDash
+# BabyBlink
 
 Ajman office and school quick-commerce demo. The catalogue, cart, checkout, and tracking all run in the browser. Nothing is sent to a server.
 
